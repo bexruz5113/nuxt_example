@@ -401,18 +401,18 @@
         </div>
       </div>
     </div>
-    <div class="w-full bg-image-last py-16">
+    <div class="w-full bg-image-last py-16 px-6">
       <div class="max-w-5xl bg-color-play p-8 mx-auto rounded-2xl">
-        <p class="text-center text-yellow-500 text-3xl font-bold">
+        <p class="text-center text-yellow-500 text-xl md:text-3xl font-bold">
           There are many reasons to get down
         </p>
-        <p class="text-gray-500 text-center text-lg w-2/5 mx-auto py-4">
+        <p class="text-gray-500 text-center text-md md:text-lg md:w-2/5 w-full mx-auto py-4">
           There are many reasons to get down and start to get depressed about
           your situation.
         </p>
             <form class="text-center">
-                <input class="p-3 rounded-md outline-none bg-white-100 w-1/3" type="text" placeholder="Your Email">
-                <button class="py-3 px-5 text-white font-bold bg-yellow-500 rounded-md outline-none" type="submit">Send</button>
+                <input class="md:p-3 p-2 rounded-md outline-none bg-white-100 md:w-1/3 w-3/4" type="text" placeholder="Your Email">
+                <button class="md:py-3 py-2 md:px-5 px-1 text-white md:font-bold font-normal bg-yellow-500 rounded-md outline-none md:w-1/6 w-1/5" type="submit">Send</button>
             </form>
             <p class="text-center text-sm pt-2 text-gray-500">No spam. Only releases, updates and discounts</p>
       </div>
