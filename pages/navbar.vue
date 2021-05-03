@@ -15,7 +15,7 @@
           <li class="font-sans text-white">Benefite</li>
         </ul>
       </div>
-      <div class="max-w-1/2 w-8 h-8 md:hidden flex">
+      <div class="max-w-1/2 w-8 h-8 md:hidden flex" @click="addMenu=false">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -31,6 +31,7 @@
             d="M4 6h16M4 12h8m-8 6h16"
           />
         </svg>
+        
       </div>
       <div class="w-1/2 flex justify-end">
         <button
