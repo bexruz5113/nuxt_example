@@ -54,7 +54,7 @@
       </div>
       <div class="sm:w-1/2 w-3/4 text-right">
         <button
-          class="mr-4 text-yellow-500 border-2 hover:bg-yellow-500 hover:text-white px-2 py-1 text-sm md:text-lg md:px-8 md:py-2 border-yellow-500 rounded-md font-sans"
+          class="transition duration-500 mr-4 text-yellow-500 border-2 hover:bg-yellow-500 hover:text-white px-2 py-1 text-sm md:text-lg md:px-8 md:py-2 border-yellow-500 rounded-md font-sans"
           type="submit"
         >
           Sing in
@@ -106,14 +106,14 @@ export default {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  animation: slide 2s forwards;
+  animation: slide 1s forwards;
 }
 @keyframes slide {
   from {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 </style>

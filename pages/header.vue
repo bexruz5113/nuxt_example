@@ -17,7 +17,7 @@
             Learn More
           </button>
           <button
-            class="border-2 px-8 py-1 text-sm md:text-lg md:px-12 md:py-2 rounded-md hover:bg-yellow-500 hover:text-white border-yellow-500 text-yellow-500"
+            class="transition duration-500 border-2 px-8 py-1 text-sm md:text-lg md:px-12 md:py-2 rounded-md hover:bg-yellow-500 hover:text-white border-yellow-500 text-yellow-500"
             type="submit"
           >
             Demo
@@ -57,12 +57,12 @@
       <div
         class="grid gap-x-10 gap-y-10 lg:grid-cols-6 md:grid-cols-3 px-4 grid-cols-2"
       >
-        <img src="../assets/Frame.svg" />
-        <img src="../assets/Frame (1).svg" />
-        <img src="../assets/Frame (2).svg" />
-        <img src="../assets/Frame (3).svg" />
-        <img src="../assets/Frame (4).svg" />
-        <img src="../assets/Frame (5).svg" />
+        <a href="#"><img src="../assets/Frame.svg" /></a>
+        <a href="#"><img src="../assets/Frame (1).svg" /></a>
+        <a href="#"><img src="../assets/Frame (2).svg" /></a>
+        <a href="#"><img src="../assets/Frame (3).svg" /></a>
+        <a href="#"><img src="../assets/Frame (4).svg" /></a>
+        <a href="#"><img src="../assets/Frame (5).svg" /></a>
       </div>
     </div>
     <div>
