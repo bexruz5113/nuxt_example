@@ -57,13 +57,13 @@
           class="transition duration-500 mr-4 text-yellow-500 border-2 hover:bg-yellow-500 hover:text-white px-2 py-1 text-sm md:text-lg md:px-8 md:py-2 border-yellow-500 rounded-md font-sans"
           type="submit"
         >
-          Sing in
+          Sign in
         </button>
         <button
           class="text-white border-2 boxShadow border-yellow-500 px-2 py-1 text-sm md:text-lg md:px-8 md:py-2 bg-yellow-500 rounded-md font-sans"
           type="submit"
         >
-          Sing up
+          Sign up
         </button>
       </div>
       </div>
