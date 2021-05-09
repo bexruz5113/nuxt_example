@@ -6,7 +6,7 @@ module.exports = {
       boxShadow: {
         pink: '0 3px 2px 0 rgba(120, 120, 120, 0.05)',
       }
-    },
+    }, 
   },
   variants: {
     extend: {},

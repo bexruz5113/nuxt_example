@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!--<div class="flex flex-row bg-red-400 h-16 w-16 rounded-md text-3xl shadow-pink my-8">
-        1
-    </div> -->
     <div class="bg-image-first bg-color w-full p-10">
         <div class="max-w-6xl mx-auto">
             <div class="flex justify-between items-center">

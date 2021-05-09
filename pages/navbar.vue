@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-full container">
+  <div class="max-w-full container bg-white dark:bg-yellow-600" :class="theme">
     <div class="max-w-7xl mx-auto flex justify-between">
       <div class="w-1/2 hidden md:block">
         <ul class="md:flex hidden justify-around items-center">
@@ -7,7 +7,7 @@
             class="w-10 h-10 bg-yellow-500 rounded-full flex justify-center items-center"
           >
             <nuxt-link to="#">
-              <img src="../assets/equal.png" width="24"/>
+              <img src="../assets/equal.png" width="24" />
             </nuxt-link>
           </li>
           <li class="font-sans text-white">
@@ -25,6 +25,18 @@
           <li class="font-sans text-white">
             <nuxt-link to="#">Benefite</nuxt-link>
           </li>
+        <!--  <li class="font-sans text-white flex justify-between">
+          <button class="btn border border-white capitalize" @click="changeMode">
+            mode
+          </button>
+          </li>-->
+         <!-- <li>
+            <select required class="bg-transparent text-white">
+              <option disabled selected hidden value="theme">Theme</option>
+              <option value="light" class="text-black">Light</option>
+              <option value="dark" class="text-black">Dark</option>
+             </select>
+          </li>-->
         </ul>
       </div>
       <div class="max-w-1/2 w-8 h-8 md:hidden flex" @click="addMenu()">
@@ -43,14 +55,28 @@
             d="M4 6h16M4 12h8m-8 6h16"
           />
         </svg>
-      <div v-if="sidebar" class="block addMenu">
-        <div class="w-100 text-right font-bold text-2xl cursor-pointer text-white pt-6 pr-6">X</div>
-        <div class="text-xl font-bold text-center py-4 text-white"><nuxt-link to="/">About</nuxt-link></div>
-        <div class="text-xl font-bold text-center py-4 text-white"><nuxt-link to="/">Gallery</nuxt-link></div>
-        <div class="text-xl font-bold text-center py-4 text-white"><nuxt-link to="/">Pricing</nuxt-link></div>
-        <div class="text-xl font-bold text-center py-4 text-white"><nuxt-link to="/">FAQ</nuxt-link></div>
-        <div class="text-xl font-bold text-center py-4 text-white"><nuxt-link to="/">Benefite</nuxt-link></div>
-      </div>
+        <div v-if="sidebar" class="block addMenu">
+          <div
+            class="w-100 text-right font-bold text-2xl cursor-pointer text-white pt-6 pr-6"
+          >
+            X
+          </div>
+          <div class="text-xl font-bold text-center py-4 text-white">
+            <nuxt-link to="/">About</nuxt-link>
+          </div>
+          <div class="text-xl font-bold text-center py-4 text-white">
+            <nuxt-link to="/">Gallery</nuxt-link>
+          </div>
+          <div class="text-xl font-bold text-center py-4 text-white">
+            <nuxt-link to="/">Pricing</nuxt-link>
+          </div>
+          <div class="text-xl font-bold text-center py-4 text-white">
+            <nuxt-link to="/">FAQ</nuxt-link>
+          </div>
+          <div class="text-xl font-bold text-center py-4 text-white">
+            <nuxt-link to="/">Benefite</nuxt-link>
+          </div>
+        </div>
       </div>
       <div class="sm:w-1/2 w-3/4 text-right">
         <button
@@ -66,24 +92,27 @@
           Sign up
         </button>
       </div>
-      </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      sidebar: false
+      sidebar: false,
+      theme: 'light'
     }
   },
   methods: {
     addMenu () {
       this.sidebar = !this.sidebar
+    },
+    toggle () {
+      this.theme = this.theme === 'light' ? 'dark' : 'light'
     }
   }
 }
-
 </script>
 
 <style>
@@ -100,7 +129,7 @@ export default {
   box-shadow: 0 10px 25px -3px rgba(211, 134, 19, 0.534);
 }
 .addMenu {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

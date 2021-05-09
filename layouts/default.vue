@@ -1,6 +1,7 @@
 <template>
   <div>
     <Nuxt />
+
   </div>
 </template>
 
@@ -47,9 +48,23 @@ html {
   padding: 10px 30px;
   margin-left: 15px;
 }
-
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #3b1d60; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+  height: 60px;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d144d; 
 }
 </style>
