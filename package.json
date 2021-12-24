@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.2.0",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.0.5",
@@ -25,6 +27,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.7.0",
+    "node-sass": "^7.0.0",
     "postcss": "^8.2.8",
     "prettier": "^2.2.1"
   }
